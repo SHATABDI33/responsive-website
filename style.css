@@ -77,6 +77,29 @@ button{
     border: none;
 
 }
+
+.plants-lover{
+    display: flex;
+    justify-content: space-between;
+    width: 1140px;
+    margin: 200px auto;
+    gap: 60px;
+}
+
+.list{
+
+    padding: 15px;
+    line-height: 1.5rem;
+}
+
+.badge{
+   position: absolute;
+   width: 18%;
+   top: -130px;
+   right: 680px;
+   background-color:transparent;
+   /* z-index: -1; */
+}
 @media screen and (max-width:576px) {
     .navbar{
         display: none;
@@ -99,13 +122,24 @@ button{
    padding: 5px;
 }
 
+.plants-lover{
+  flex-direction: column;
+  padding: 0px 5px;
+}
+.list{
+  font-size: 2.5rem;
+  line-height: 3rem;
+}
+
 
 }
 
 @media screen and (min-width:577px) and (max-width:992px){
     .navbar-mobile{
     display: none;
+
 }
+
 }
 @media screen and (min-width: 992px) and (max-width:1280px){
     .navbar-mobile{
