@@ -46,10 +46,10 @@
      margin-top: 100px;
 }
 .writing{
-    width: 50%;
+    width: 100%;
 }
 .image{
-   width: 50%;
+   width: 100%;
 }
 .Our-Plants{
       width: 1140px;
@@ -59,6 +59,22 @@
 }
 
 .card{
+    width:100%;
+   display: grid;
+   grid-template-columns:repeat(4, 1fr);
+   gap: 15px;
+}
+.card-image{
+    width: 100%;
+}
+
+button{
+    background-color: #E95A08;
+    width: 100%;
+    color: rgb(255, 255, 255) !important;
+    padding: 10px;
+    font-size: 1rem;
+    border: none;
 
 }
 @media screen and (max-width:576px) {
@@ -76,6 +92,12 @@
         .image { order: 1; }
         .writing { order: 2; }
     }
+    .card{
+   display: grid;
+   grid-template-columns:repeat(2, 1fr);
+   gap: 30px ;
+   padding: 5px;
+}
 
 
 }
