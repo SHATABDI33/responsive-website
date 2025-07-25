@@ -68,7 +68,7 @@
     width: 100%;
 }
 
-button{
+.btn1{
     background-color: #E95A08;
     width: 100%;
     color: rgb(255, 255, 255) !important;
@@ -98,7 +98,56 @@ button{
    top: -130px;
    right: 680px;
    background-color:transparent;
-   /* z-index: -1; */
+}
+.latest-deal{
+    width: 1140px;
+    margin: 0 auto;
+    display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 20px;
+}
+
+.bloom{
+    background-image: url(assets/deal-bloom.png) ;
+}
+.ana{
+    background-image: url(assets/deal-ana.png);
+}
+.zabo{
+    background-image: url(assets/deal-zabo.png);
+  grid-row: span 2;
+  background-size: cover;
+  border-radius: 10px;
+}
+.bloom, .ana{
+    height: 150px;
+  background-size: cover;
+  border-radius: 10px;
+}
+.bloom, .ana, .zabo{
+        background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      border-radius: 6px;
+
+}
+.btn2{
+    font-size: 1em;
+    color: white;
+    background-color: transparent;
+    border: none;
+    text-decoration: underline;
+
+}
+
+.join-section{
+    width: 100%;
+    height: 70vh;
+    background-image: url(assets/news-letter-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 @media screen and (max-width:576px) {
     .navbar{
@@ -131,6 +180,19 @@ button{
   line-height: 3rem;
 }
 
+.latest-deal{
+  grid-template-columns:repeat(1, 1fr); ;
+  gap: 20px;
+  flex-direction: column;
+  padding: 5px;
+
+}
+.bloom, .ana, .zabo{
+    width: 100%;
+    height: 300px;
+   
+}
+
 
 }
 
@@ -145,5 +207,6 @@ button{
     .navbar-mobile{
     display: none;
 }
+
 }
 
