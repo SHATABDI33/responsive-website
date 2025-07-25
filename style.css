@@ -45,7 +45,22 @@
     align-items: end;
      margin-top: 100px;
 }
+.writing{
+    width: 50%;
+}
+.image{
+   width: 50%;
+}
+.Our-Plants{
+      width: 1140px;
+    margin: 0 auto;
+    text-align: center;
+     margin-top: 100px;
+}
 
+.card{
+
+}
 @media screen and (max-width:576px) {
     .navbar{
         display: none;
